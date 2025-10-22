@@ -42,15 +42,15 @@ python train.py
 3)Build a browser/email plugin for real-time phishing detection
 4)Use larger datasets (e.g., Enron, Kaggle Phishing Dataset)
 
-##💻 Tech Stack
+## 💻 Tech Stack
 
 -Python -pandas / scikit-learn -TfidfVectorizer -Logistic Regression -Joblib -Streamlit
 
-##📜 License
+## 📜 License
 
 This project is licensed under the MIT License.
 
-##👨‍💻 Author
+## 👨‍💻 Author
 
 Raj Patil
 Master’s in Information Technology (Cybersecurity focus) @ Arizona State University
