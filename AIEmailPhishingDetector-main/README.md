@@ -1,22 +1,22 @@
-## AIEmailPhishingDetector(ML):
+## 🧠 AI Email Phishing Detector 🔒
 
-It is a machine learning project driven by artificial intelligence that uses NLP (Natural Language Processing) and Logistic Regression to identify phishing vs. safe emails. This project, which was created using Python, scikit-learn, and pandas, shows how machine learning can distinguish between malicious and legitimate emails. 
+A phishing detection system powered by artificial intelligence (AI) that uses machine learning and natural language processing (NLP) to distinguish between fake and real emails.This project, developed with Python, scikit-learn, pandas, and Streamlit, demonstrates how machine learning (ML) may improve email security by intelligently automating operations.
 
-## Features: 
-•	Cleans and preprocesses raw email text, eliminating special characters, URLs, and other elements. 
-•	Transforms text into TF-IDF(Term Frequency – Inverse Document Frequency) vectors so that it can be represented numerically.
-•	Trains a Logistic Regression classifier - Uses precision, recall, and F1-score to assess performance 
-•	Preserves the vectorizer and trained model for deployment. 
-•	I have used Streamlit app for phishing detection in real time.
+## 🚀 Features
+- Converts text to TF-IDF vectors for numerical representation. 
+- Cleans and preprocesses raw email content to remove URLs, special characters, and unnecessary symbols. 
+- Evaluates Logistic Regression performance (precision, recall, F1-score) 
+- Saves trained model and vectorizer for Joblib deployment 
+- Works with Streamlit web app for real-time phishing detection.
 
-## Installation & Setup:
-1. Clone repo
-git clone https://github.com/Rknoxx/AIEmailPhishingDetector.git 
-cd AIEmailPhishingDetector
+## ⚙️ Installation & Setup
 
-2. Create virtual environment
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1   # for PowerShell
+1. Clone the repository
+git clone https://github.com/Rknoxx/AIEmailPhishDetector.git
+cd AIEmailPhishDetector
+
+2. Create virtual environment (PowerShell)
+python -m venv .venv.\.venv\Scripts\Activate.ps1
 
 3. Install dependencies
 pip install -r requirements.txt
@@ -25,29 +25,34 @@ pip install -r requirements.txt
 cd backend
 python train.py
 
-## What this will do:
-Preprocess emails -> Train the ML model -> Print classification report -> Save model + vectorizer in /models
+📄 Refer to How to run the project.txt for additional details.
 
-## Future Improvements:
-•	Add deep learning models (LSTM / BERT for NLP)
-•	Deploy as a Streamlit web app
-•	Build a browser/email plugin for real-time phishing detection
-•	Use a larger dataset (Enron dataset, Kaggle phishing email dataset)
+## 🧩 How It Works
 
-## Tech Stack:
-•	Python
-•	Pandas / scikit-learn
-•	TfidfVectorizer
-•	Logistic Regression
-•	Joblib (for model persistence)
+1)Preprocesses and cleans email data
+2)Trains the ML model on TF-IDF features
+3)Evaluates results and prints a classification report
+4)Saves both model and vectorizer to /models
+5)Streamlit app provides live phishing detection
 
-## License:
+## 🧭 Future Improvements
+
+1)Integrate deep learning models (LSTM / BERT) for advanced NLP
+2)Deploy a full-featured Streamlit web app
+3)Build a browser/email plugin for real-time phishing detection
+4)Use larger datasets (e.g., Enron, Kaggle Phishing Dataset)
+
+##💻 Tech Stack
+
+-Python -pandas / scikit-learn -TfidfVectorizer -Logistic Regression -Joblib -Streamlit
+
+##📜 License
+
 This project is licensed under the MIT License.
 
-## Author:
+##👨‍💻 Author
+
 Raj Patil
-Master’s in Information Technology (Cybersecurity focus)
+Master’s in Information Technology (Cybersecurity focus) @ Arizona State University
 Interested in SOC Analyst, Threat Hunter, Cloud Security Engineer, and GRC roles
-LinkedIn: https://www.linkedin.com/in/raj-patil834/ 
-
-
+LinkedIn: https://www.linkedin.com/in/raj-patil834/  
