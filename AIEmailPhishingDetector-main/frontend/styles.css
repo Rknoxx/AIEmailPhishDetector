@@ -1,0 +1,184 @@
+
+
+/* ========== General App Styling - Fullscreen Enhancements ========== */
+.stApp {
+    background-color: #f4f6f9;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    padding: 0 !important;  /* Remove all padding for fullscreen feel */
+    margin: 0 !important;
+}
+
+/* Hide Streamlit's default header/footer for cleaner look (optional) */
+header, footer {
+    display: none !important;
+}
+
+/* Center everything and use full viewport */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 !important;
+    margin: 0 !important;
+    min-height: 100vh;  /* Full viewport height */
+}
+
+/* Title Styling */
+h1 {
+    text-align: center;
+    color: white!important;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 8px black;
+    padding: 0 20px;  /* Light side padding for readability */
+}
+
+/* ========== Card Container - Full Width ========== */
+.reportview-container .main .block-container {
+    max-width: 100% !important;  /* Full width instead of 800px */
+    width: 100%;
+    margin: 0 auto !important;
+    background: white;
+    padding: 20px !important;  /* Reduced padding for more space */
+    border-radius: 0 !important;  /* Remove rounded corners for edge-to-edge */
+    box-shadow: none !important;  /* Optional: remove shadow for flat fullscreen */
+}
+
+/* Fullscreen Banner */
+.banner-container {
+    width: 100vw !important;  /* Full viewport width */
+    height: 40vh;  /* Adjust height as needed, e.g., 40% of viewport */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #000; /* Optional background */
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;  /* Ensures image covers without distortion */
+}
+
+/* Text Area - Full Width */
+textarea {
+    border: 1.8px solid #cbd5e1 !important;
+    border-radius: 10px !important;
+    background-color: #f9fafb !important;
+    font-size: 15px !important;
+    padding: 12px !important;
+    /* box-shadow: 0 0 12px rgba(255, 75, 75, 0.7); */
+    min-height: 120px !important;
+    width: 100% !important;  /* Full width */
+    transition: border 0.3s ease;
+    box-sizing: border-box;  /* Includes padding in width */
+    color:Black !important;
+}
+textarea:focus {
+    /* border: 2px solid #2563eb !important; */
+    background: #f0f9ff !important;
+    outline: none !important;
+}
+
+/* ========== Button - Full Width ========== */
+button[kind="primary"] {
+    background: linear-gradient(90deg, #2563eb, #1d4ed8);
+    color: white !important;
+    font-weight: 600 !important;
+    border-radius: 8px !important;
+    padding: 0.6rem 1.5rem !important;
+    transition: all 0.3s ease-in-out;
+    border: none !important;
+    width: 100% !important;  /* Stretch to full container width */
+}
+button[kind="primary"]:hover {
+    background: linear-gradient(90deg, #1d4ed8, #2563eb);
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 12px rgba(37,99,235,0.3);
+}
+
+/* Custom Fullscreen Button */
+button[onclick="toggleFullscreen()"] {
+    background: #6366f1 !important;
+    color: white !important;
+    border: none !important;
+    padding: 10px !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    font-weight: 500 !important;
+    transition: background 0.3s !important;
+}
+button[onclick="toggleFullscreen()"]:hover {
+    background: #5856eb !important;
+    transform: scale(1.05) !important;
+}
+
+/* ========== Alerts (Safe vs Phishing) ========== */
+.stAlert {
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 100% !important;  /* Full width */
+    margin-bottom: 20px;
+}
+
+.stAlert > div {
+    display: flex;
+    align-items: center;
+}
+
+.stAlert.success {
+    background:green !important;
+    color: white !important;
+    border-left: black  !important;
+    text-shadow: 1px 1px 3px green !important;
+    box-shadow: 0px 4px 10px rgba(16, 185, 129, 0.6) !important;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+/* Error (Phishing Warning) */
+.stAlert.error {
+    background: red !important;
+    color: white !important;
+    border-left: 5px solid #ef4444 !important;
+    text-shadow: 2px 2px 8px red;
+    box-shadow: 0px 4px 16px rgba(255, 0, 0, 0.8); /* Increased blur and opacity */
+}
+
+section.stMain {
+    background-image: url("assets/cyber_banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;  /* ensures it stretches full screen */
+    width: 100%;    /* make sure it fills horizontally */
+}
+
+    .st-emotion-cache-ne3lcw p, .st-emotion-cache-ne3lcw ol, .st-emotion-cache-ne3lcw ul, .st-emotion-cache-ne3lcw dl, .st-emotion-cache-ne3lcw li {
+        color: white;
+    }
+.st-emotion-cache-r44huj p, .st-emotion-cache-r44huj ol, .st-emotion-cache-r44huj ul, .st-emotion-cache-r44huj dl, .st-emotion-cache-r44huj li {
+          color: white;
+           font-size:larger ;
+
+    }
+    .st-emotion-cache-r44huj h3{
+              color: white;
+    }
+
+    .st-emotion-cache-p38tq{
+          color: white;
+    }
+
+    .st-emotion-cache-r44huj a {
+    color: white;
+    text-decoration: underline;
+    text-shadow: rgb(0, 247, 255);
+    text-shadow: 2px 2px 5px rgb(0, 247, 255) !important;
+}

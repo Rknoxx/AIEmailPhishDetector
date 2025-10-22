@@ -1,0 +1,14 @@
+How to run the project:
+
+For Frontend:
+1) "cd <filename>"
+2) Then run "python -m venv .venv ..venv\Scripts\Activate.ps1"
+3) then "cd Frontend"
+4) "streamlit run streamlit_app.py"(This will start the streamlit and will display our project)
+
+
+For Backend:
+1) First initiate venv. file
+2) then "cd backend"
+3) then "python .\train.py"(after running this it will show some error regarding some instances which are not downloaded, install then using pip install xxx)
+4) then uvicorn app:app --reload --port 8000
